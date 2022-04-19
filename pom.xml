@@ -18,12 +18,12 @@
     <quarkus.platform.version>2.8.0.Final</quarkus.platform.version>
     <surefire-plugin.version>3.0.0-M5</surefire-plugin.version>
 
-    <kafka-oauth-client.version>0.8.1</kafka-oauth-client.version>
     <azure-identity.version>1.5.0</azure-identity.version>
     <azure-data-schemaregistry-avro.version>1.0.0-beta.4</azure-data-schemaregistry-avro.version>
   </properties>
   <modules>
     <module>azure-event-hub</module>
+    <module>rhoas</module>
   </modules>
   <dependencyManagement>
     <dependencies>
@@ -33,11 +33,6 @@
         <version>${quarkus.platform.version}</version>
         <type>pom</type>
         <scope>import</scope>
-      </dependency>
-      <dependency>
-        <groupId>io.strimzi</groupId>
-        <artifactId>kafka-oauth-client</artifactId>
-        <version>${kafka-oauth-client.version}</version>
       </dependency>
       <dependency>
         <groupId>com.azure</groupId>

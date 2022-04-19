@@ -1,0 +1,39 @@
+{
+  "namespace": "com.ozangunalp",
+  "type": "record",
+  "name": "PointerEvent",
+  "fields": [
+    {
+      "name": "userId",
+      "type": "string"
+    },
+    {
+      "name": "sessionId",
+      "type": "string"
+    },
+    {
+      "name": "pointerType",
+      "type": "string"
+    },
+    {
+      "name": "xpath",
+      "type": "string"
+    },
+    {
+      "name": "screenX",
+      "type": "int"
+    },
+    {
+      "name": "screenY",
+      "type": "int"
+    },
+    {
+      "name": "clientX",
+      "type": "int"
+    },
+    {
+      "name": "clientY",
+      "type": "int"
+    }
+  ]
+}
