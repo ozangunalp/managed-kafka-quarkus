@@ -19,6 +19,8 @@
     <surefire-plugin.version>3.0.0-M5</surefire-plugin.version>
 
     <kafka-oauth-client.version>0.8.1</kafka-oauth-client.version>
+    <azure-identity.version>1.5.0</azure-identity.version>
+    <azure-data-schemaregistry-avro.version>1.0.0-beta.4</azure-data-schemaregistry-avro.version>
   </properties>
   <modules>
     <module>azure-event-hub</module>
@@ -36,6 +38,16 @@
         <groupId>io.strimzi</groupId>
         <artifactId>kafka-oauth-client</artifactId>
         <version>${kafka-oauth-client.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.azure</groupId>
+        <artifactId>azure-identity</artifactId>
+        <version>${azure-identity.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.azure</groupId>
+        <artifactId>azure-data-schemaregistry-avro</artifactId>
+        <version>${azure-data-schemaregistry-avro.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>

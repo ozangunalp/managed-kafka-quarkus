@@ -36,7 +36,7 @@ public class ClickResource {
     public Uni<Void> sendMessage(@HeaderParam("user-agent") String userAgent,
                                  PointerEvent event) {
         log.infof("Click from %s : %s", userAgent, event);
-        return emitter.send(Record.of(event.userId, event));
+        return emitter.send(Record.of(event.getUserId(), event));
     }
 
     public void startup(@Observes StartupEvent event) {
