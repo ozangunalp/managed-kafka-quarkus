@@ -20,10 +20,12 @@
 
     <azure-identity.version>1.5.0</azure-identity.version>
     <azure-data-schemaregistry-avro.version>1.0.0-beta.4</azure-data-schemaregistry-avro.version>
+    <confluent-kafka-avro-serializer.version>7.1.0</confluent-kafka-avro-serializer.version>
   </properties>
   <modules>
     <module>azure-event-hub</module>
     <module>rhoas</module>
+    <module>confluent</module>
   </modules>
   <dependencyManagement>
     <dependencies>
@@ -43,6 +45,17 @@
         <groupId>com.azure</groupId>
         <artifactId>azure-data-schemaregistry-avro</artifactId>
         <version>${azure-data-schemaregistry-avro.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.confluent</groupId>
+        <artifactId>kafka-avro-serializer</artifactId>
+        <version>${confluent-kafka-avro-serializer.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>jakarta.ws.rs</groupId>
+            <artifactId>jakarta.ws.rs-api</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
     </dependencies>
   </dependencyManagement>

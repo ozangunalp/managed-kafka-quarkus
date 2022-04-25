@@ -59,7 +59,7 @@ Red Hat Developer Account :
 1. Install rhoas CLI: Link 
 2. Login: `rhoas login` (with `--print-sso-url` if not on the default browser window.)
 3. Create Managed Kafka Instance: `rhoas kafka create --name clickstream`
-4. Create RHOAS Service Account: `rhoas service-account --file-format json --short-description="clickstream"`
+4. Create RHOAS Service Account: `rhoas service-account create --file-format json --short-description="clickstream"`
 5. Note the created `credentials.json` file. Note `clientID` and `clientSecret`, which will be `rhoas.client.id` and `rhoas.client.secret` respectively.
 
 ```json
@@ -112,7 +112,7 @@ rhoas.bootstrap.servers=CHANGE_ME
 rhoas.service.registry.url=CHANGE_ME
 ```
 
-### Run the application with Azure Event Hub config
+### Run the application with RHOAS config
 
 ```shell script
 ./mvnw compile quarkus:dev -Dquarkus.profile=managed
