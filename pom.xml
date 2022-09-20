@@ -26,6 +26,7 @@
     <module>azure-event-hub</module>
     <module>rhoas</module>
     <module>confluent</module>
+    <module>aiven</module>
   </modules>
   <dependencyManagement>
     <dependencies>
