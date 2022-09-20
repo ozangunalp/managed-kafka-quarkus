@@ -31,13 +31,7 @@
     </dependency>
     <dependency>
       <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-apicurio-registry-avro</artifactId>
-    </dependency>
-    <!-- Quarkus extension for generating Java code from Avro schemas -->
-    <!-- with this, you don't have to use avro-maven-plugin -->
-    <dependency>
-      <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-avro</artifactId>
+      <artifactId>quarkus-confluent-registry-avro</artifactId>
     </dependency>
         <!-- Confluent registry libraries use JAX-RS client -->
     <dependency>
